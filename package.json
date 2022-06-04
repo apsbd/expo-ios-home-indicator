@@ -1,0 +1,31 @@
+{
+    "name": "expo-ios-home-indicator",
+    "version": "0.1.0",
+    "description": "iOS Home Indicator control",
+    "main": "build/ExpoIosHomeIndicator.js",
+    "types": "build/ExpoIosHomeIndicator.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "react-native",
+        "expo",
+        "expo-ios-home-indicator",
+        "ExpoIosHomeIndicator"
+    ],
+    "repository": "https://github.com/apsbd/expo-ios-home-indicator",
+    "bugs": {
+        "url": "https://github.com/apsbd/expo-ios-home-indicator/issues"
+    },
+    "author": "Mohiuddin Ahmed",
+    "license": "MIT",
+    "homepage": "https://github.com/apsbd#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "expo-module-scripts": "^2.0.0"
+    },
+    "peerDependencies": {
+        "expo": "*"
+    }
+}
