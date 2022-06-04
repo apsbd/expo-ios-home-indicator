@@ -1,14 +1,46 @@
+import React, { useEffect } from "react";
+import { Platform } from "react-native";
+
 import { NativeModulesProxy } from 'expo-modules-core';
 
-import ExpoIosHomeIndicatorView, { ExpoIosHomeIndicatorViewProps } from './ExpoIosHomeIndicatorView'
-
 const { ExpoIosHomeIndicator } = NativeModulesProxy;
+const isAndroid = Platform.OS === "android";
 
-export async function helloAsync(options: Record<string, string>) {
-  return await ExpoIosHomeIndicator.helloAsync(options);
+export const IosHomeIndicator = (props) => {
+    useEffect(() => {
+        if (!isAndroid) return;
+
+        propsHistory.push(props);
+        updateNativeHomeIndicator({ autoHidden: props.autoHidden });
+
+        return () => {
+            if (!isAndroid) return;
+
+            const previousProps = popAndGetPreviousProps();
+            updateNativeHomeIndicator({ autoHidden: previousProps.autoHidden });
+        };
+    }, []);
+
+    return null;
+};
+
+let propsHistory = [];
+
+export function clearPropsHistory() {
+    propsHistory = [];
 }
 
-export {
-  ExpoIosHomeIndicatorView,
-  ExpoIosHomeIndicatorViewProps
-};
+export function getPropsHistory() {
+    return [...propsHistory];
+}
+
+export function popAndGetPreviousProps() {
+    propsHistory.pop();
+    return propsHistory[propsHistory.length - 1] || { autoHidden: false };
+}
+
+async function updateNativeHomeIndicator({ autoHidden = false }) {
+    if (autoHidden) {
+        await ExpoIosHomeIndicator.autoHidden();
+    }
+}
