@@ -1,0 +1,76 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E2BD8B27284B8C650034FB19 /* ExpoIosHomeIndicator.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ExpoIosHomeIndicator.podspec; path = ../ExpoIosHomeIndicator.podspec; sourceTree = "<group>"; };
+		E2BD8B28284B8C650034FB19 /* ExpoIosHomeIndicatorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpoIosHomeIndicatorModule.swift; path = ../ExpoIosHomeIndicatorModule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E2BD8B1F284B8C4A0034FB19 = {
+			isa = PBXGroup;
+			children = (
+				E2BD8B27284B8C650034FB19 /* ExpoIosHomeIndicator.podspec */,
+				E2BD8B28284B8C650034FB19 /* ExpoIosHomeIndicatorModule.swift */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E2BD8B20284B8C4A0034FB19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = E2BD8B23284B8C4A0034FB19 /* Build configuration list for PBXProject "ExpoIosHomeIndicator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2BD8B1F284B8C4A0034FB19;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E2BD8B24284B8C4A0034FB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E2BD8B25284B8C4A0034FB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2BD8B23284B8C4A0034FB19 /* Build configuration list for PBXProject "ExpoIosHomeIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BD8B24284B8C4A0034FB19 /* Debug */,
+				E2BD8B25284B8C4A0034FB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2BD8B20284B8C4A0034FB19 /* Project object */;
+}

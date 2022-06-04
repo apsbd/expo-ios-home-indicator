@@ -1,21 +1,23 @@
 import ExpoModulesCore
 
 public class ExpoIosHomeIndicatorModule: Module {
-  public func definition() -> ModuleDefinition {
-    name("ExpoIosHomeIndicator")
+    public func definition() -> ModuleDefinition {
+        Name("ExpoIosHomeIndicator")
 
-    function("helloAsync") { (options: [String: String]) in
-      print("Hello 👋")
+        AsyncFunction("setBackgroundColorAsync") { (autoHidden: Bool) in
+            Self.setBackgroundColorAsync(autoHidden: autoHidden)
+        }
     }
-
-    viewManager {
-      view {
-        ExpoIosHomeIndicatorView()
-      }
-
-      prop("name") { (view: ExpoIosHomeIndicatorView, prop: String) in
-        print(prop)
-      }
+  
+    static func setBackgroundColorAsync(autoHidden: Bool) {
+        if autoHidden == false {
+            return
+        }
+            
+        EXUtilities.performSynchronously {
+          if let window = UIApplication.shared.delegate?.window {
+            window?.rootViewController?.setNeedsUpdateOfHomeIndicatorAutoHidden()
+          }
+        }
     }
-  }
 }
