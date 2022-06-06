@@ -3,19 +3,19 @@ import { Platform } from "react-native";
 import { NativeModulesProxy } from 'expo-modules-core';
 
 const { ExpoIosHomeIndicator } = NativeModulesProxy;
-const isAndroid = Platform.OS === "android";
+const isIos = Platform.OS === "ios";
 
 type Props = { autoHidden: boolean };
 
 export const IosHomeIndicator = (props: Props) => {
     useEffect(() => {
-        if (!isAndroid) return;
+        if (!isIos) return;
 
         propsHistory.push(props);
         updateNativeHomeIndicator({ autoHidden: props.autoHidden });
 
         return () => {
-            if (!isAndroid) return;
+            if (!isIos) return;
 
             const previousProps = popAndGetPreviousProps();
             updateNativeHomeIndicator({ autoHidden: previousProps.autoHidden });
@@ -42,6 +42,6 @@ export function popAndGetPreviousProps() {
 
 async function updateNativeHomeIndicator({ autoHidden = false }: { autoHidden: boolean }) {
     if (autoHidden) {
-        await ExpoIosHomeIndicator.autoHidden();
+        await ExpoIosHomeIndicator.setAutoHiddenAsync(autoHidden);
     }
 }
