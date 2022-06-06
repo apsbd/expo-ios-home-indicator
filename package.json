@@ -1,26 +1,31 @@
 {
-  "name": "expo-ios-home-indicator",
-  "version": "0.1.0",
-  "description": "Native Ios Home Indicator Module",
-  "main": "build/ExpoIosHomeIndicator.js",
-  "types": "build/ExpoIosHomeIndicator.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint ."
-  },
-  "keywords": ["react-native", "expo", "expo-ios-home-indicator", "ExpoIosHomeIndicator"],
-  "repository": "https://github.com/apsbd/expo-ios-home-indicator.git",
-  "bugs": {
-    "url": "https://github.com/apsbd/expo-ios-home-indicator.git/issues"
-  },
-  "author": "Mohiuddin Ahmed",
-  "license": "MIT",
-  "homepage": "https://github.com/apsbd/expo-ios-home-indicator.git#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "expo-module-scripts": "^2.0.0"
-  },
-  "peerDependencies": {
-    "expo": "*"
-  }
+    "name": "expo-ios-home-indicator",
+    "version": "0.5.0",
+    "description": "Native Ios Home Indicator Module",
+    "main": "build/ExpoIosHomeIndicator.js",
+    "types": "build/ExpoIosHomeIndicator.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "react-native",
+        "expo",
+        "expo-ios-home-indicator",
+        "ExpoIosHomeIndicator"
+    ],
+    "repository": "https://github.com/apsbd/expo-ios-home-indicator.git",
+    "bugs": {
+        "url": "https://github.com/apsbd/expo-ios-home-indicator.git/issues"
+    },
+    "author": "Mohiuddin Ahmed",
+    "license": "MIT",
+    "homepage": "https://github.com/apsbd/expo-ios-home-indicator.git#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "expo-module-scripts": "^2.0.0"
+    },
+    "peerDependencies": {
+        "expo": "*"
+    }
 }
