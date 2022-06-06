@@ -1,6 +1,6 @@
 {
     "name": "expo-ios-home-indicator",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "A component that renders a native home indicator view on iOS to control it's visibility.",
     "main": "build/ExpoIosHomeIndicatorView.js",
     "types": "build/ExpoIosHomeIndicatorView.d.ts",
