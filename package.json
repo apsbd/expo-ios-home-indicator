@@ -1,6 +1,6 @@
 {
     "name": "expo-ios-home-indicator",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "description": "Native Ios Home Indicator Module",
     "main": "build/ExpoIosHomeIndicator.js",
     "types": "build/ExpoIosHomeIndicator.d.ts",

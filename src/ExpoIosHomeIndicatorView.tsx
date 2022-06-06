@@ -2,16 +2,19 @@ import { requireNativeViewManager } from 'expo-modules-core';
 import * as React from 'react';
 
 export type ExpoIosHomeIndicatorViewProps = {
-  name: number;
+    name: number;
 };
 
-type ExpoIosHomeIndicatorViewState = {}
+type ExpoIosHomeIndicatorViewState = {};
 
 const NativeView: React.ComponentType<ExpoIosHomeIndicatorViewProps> =
-  requireNativeViewManager('ExpoIosHomeIndicator');
+    requireNativeViewManager('ExpoIosHomeIndicator');
 
-export default class ExpoIosHomeIndicatorView extends React.Component<ExpoIosHomeIndicatorViewProps, ExpoIosHomeIndicatorViewState> {
-  render() {
-    return <NativeView name={this.props.name} />;
-  }
+export default class ExpoIosHomeIndicatorView extends React.Component<
+    ExpoIosHomeIndicatorViewProps,
+    ExpoIosHomeIndicatorViewState
+> {
+    render() {
+        return <NativeView name={this.props.name} />;
+    }
 }
