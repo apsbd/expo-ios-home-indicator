@@ -2,7 +2,7 @@ import { requireNativeViewManager } from 'expo-modules-core';
 import * as React from 'react';
 
 export type ExpoIosHomeIndicatorViewProps = {
-    name: number;
+    autoHidden: boolean;
 };
 
 type ExpoIosHomeIndicatorViewState = {};
@@ -15,6 +15,6 @@ export default class ExpoIosHomeIndicatorView extends React.Component<
     ExpoIosHomeIndicatorViewState
 > {
     render() {
-        return <NativeView name={this.props.name} />;
+        return <NativeView autoHidden={this.props.autoHidden} />;
     }
 }
