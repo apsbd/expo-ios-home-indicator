@@ -8,17 +8,15 @@
 
 /* Begin PBXFileReference section */
 		E2BD8B3E284DE2190034FB19 /* HomeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIndicatorView.swift; sourceTree = "<group>"; };
-		E2BD8B3F284DE4210034FB19 /* ExpoIosHomeIndicatorViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpoIosHomeIndicatorViewManager.h; sourceTree = "<group>"; };
-		E2BD8B40284DE4700034FB19 /* ExpoIosHomeIndicatorViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpoIosHomeIndicatorViewManager.m; sourceTree = "<group>"; };
+		E2BD8B42284E0DD50034FB19 /* ExpoIosHomeIndicatorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoIosHomeIndicatorModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E2BD8B37284DE1E10034FB19 = {
 			isa = PBXGroup;
 			children = (
+				E2BD8B42284E0DD50034FB19 /* ExpoIosHomeIndicatorModule.swift */,
 				E2BD8B3E284DE2190034FB19 /* HomeIndicatorView.swift */,
-				E2BD8B3F284DE4210034FB19 /* ExpoIosHomeIndicatorViewManager.h */,
-				E2BD8B40284DE4700034FB19 /* ExpoIosHomeIndicatorViewManager.m */,
 			);
 			sourceTree = "<group>";
 		};
