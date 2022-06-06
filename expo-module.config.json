@@ -1,6 +1,9 @@
 {
-    "platforms": ["ios"],
-    "ios": {
-        "modulesClassNames": ["ExpoIosHomeIndicator"]
-    }
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modulesClassNames": ["ExpoIosHomeIndicatorModule"]
+  },
+  "android": {
+    "modulesClassNames": ["expo.modules.expoioshomeindicator.ExpoIosHomeIndicatorModule"]
+  }
 }
