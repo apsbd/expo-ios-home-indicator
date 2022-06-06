@@ -7,7 +7,7 @@ type ExpoIosHomeIndicatorViewState = {};
 const NativeView: React.ComponentType<ExpoIosHomeIndicatorViewProps> =
     requireNativeViewManager('ExpoIosHomeIndicator');
 
-export default class TestView extends React.Component<
+export default class ExpoIosHomeIndicatorView extends React.Component<
     ExpoIosHomeIndicatorViewProps,
     ExpoIosHomeIndicatorViewState
 > {
