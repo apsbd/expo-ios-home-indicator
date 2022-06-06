@@ -1,7 +1,6 @@
 import UIKit
-import ExpoModulesCore
 
-public class ExpoIosHomeIndicatorView: ExpoView {
+public class ExpoIosHomeIndicatorView: UIView {
     private var prefersAutoHidden: Bool
 
     override var prefersHomeIndicatorAutoHidden: Bool {
